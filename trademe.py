@@ -15,7 +15,7 @@ def rectxt():
     j3 = json.loads(r3.text)
     #pprint(j2)  #here's the final respone, printed out nice an readable format
     #ed2 = str(j2)
-    x = j2[u'List']
+    x = j3[u'List']
     #pprint(x)
     for info in x:
          ContentPath = info[u'CategoryPath']      
@@ -35,12 +35,12 @@ def rectxt():
          #ContentImage = info[u'PictureHref']
          #ContentImage = str(ContentImage)
          #pprint(ContentTitle)
-         puts(colored.red(ContentTitle))
+         #puts(colored.red(ContentTitle))
          #pprint(ContentPath)
-         puts(colored.white(ContentPath))
+         #puts(colored.white(ContentPath))
          #pprint(ContentRegion)
-         puts(colored.green(ContentRegion))
-         pprint(ContentBuyNow)
+         #puts(colored.green(ContentRegion))
+         #pprint(ContentBuyNow)
          files = open('tradeData', 'w')
          title = open('tradeTitle', 'w')
          #imagePic = open('imagePic', 'w')

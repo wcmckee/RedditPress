@@ -5,8 +5,9 @@ import json
 
 def getInfo():
     files = open('doc', 'w')
-    watSub = input('What subreddit? ')
-    r2 = requests.get('http://www.reddit.com/r/' + watSub + '.json')
+    watFil = open('subrd','r')
+    #watSub = input('What subreddit? ')
+    r2 = requests.get('http://www.reddit.com/r/redditgetsdrawn.json')
  
     
     j2 = json.loads(r2.text)
@@ -33,7 +34,7 @@ def getInfo():
          
          
          titleData = open('titleData', 'w')
-         titleData.write(watSub)
+         #titleData.write(watSub)
          titleData.write(' - ')
          titleData.write(contentTitle)
          titleData.close()
